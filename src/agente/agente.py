@@ -2,7 +2,7 @@ import logging
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
-from services.BCD import BancoCentralData  # Certifique-se de que está importando corretamente
+from services.BCD import BancoCentralData 
 
 logging.basicConfig(level=logging.INFO)
 
@@ -37,7 +37,6 @@ class Agent:
     def get_financial_advice(self, request, monthly_statement):
         financial_consultant_template = FinancialConsultantTemplate()
 
-        # Adicionando dados do Banco Central ao contexto
         try:
             interest_rate = BancoCentralData.get_interest_rate()
             exchange_rate = BancoCentralData.get_exchange_rate()
@@ -46,7 +45,6 @@ class Agent:
             interest_rate = "Dados da taxa SELIC indisponíveis"
             exchange_rate = "Dados da taxa de câmbio indisponíveis"
         
-        # Formatar a fatura mensal para inclusão no prompt
         formatted_statement = "\n".join([f"{category}: R$ {amount}" for category, amount in monthly_statement.items()])
         enriched_request = f"{request}\n\nFatura Mensal:\n{formatted_statement}\n\nDados atualizados:\n{interest_rate}\n{exchange_rate}"
 

@@ -8,3 +8,6 @@ google-auth-httplib2
 google-api-python-client
 langchain
 langchain_community
+langchain_google_genai
+requests
+yfinance

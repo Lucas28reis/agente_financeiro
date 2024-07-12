@@ -23,5 +23,5 @@ Este projeto é um consultor financeiro baseado em IA que dá dicas e onde o usu
 ### Passo 1: Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/Lucas28reis/agente_financeiro.git
+cd agente_financeiro

@@ -1,0 +1,10 @@
+streamlit
+requests
+pandas
+PyPDF2
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+langchain
+langchain_community

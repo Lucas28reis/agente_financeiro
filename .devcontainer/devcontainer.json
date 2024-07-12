@@ -1,0 +1,31 @@
+{
+	"name": "Agent Finnance App",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "app",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-azuretools.vscode-docker",
+				"vscodevim.vim",
+				"ms-python.vscode-pylance",
+				"seatonjiang.gitmoji-vscode",
+				"eamodio.gitlens",
+				"ms-toolsai.jupyter-keymap",
+				"ms-toolsai.jupyter",
+				"ms-toolsai.jupyter-renderers",
+				"ms-toolsai.vscode-jupyter-powertoys",
+				"mathematic.vscode-pdf",
+				"GitHub.copilot"
+			]
+		}
+	},
+	"workspaceMount": "src=${localWorkspaceFolder},dst=/workspaces,type=bind,consistency=delegated",
+	"workspaceFolder": "/workspaces",
+	"forwardPorts": [5000, 8501, 8888],
+	"overrideCommand": true,
+	"remoteUser": "user",
+	"postCreateCommand": "pip install --no-cache-dir -r /tmp/requirements.txt"
+}

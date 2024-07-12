@@ -1,0 +1,25 @@
+ARG BASE_IMAGE=python:3.11-slim
+FROM $BASE_IMAGE
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    zsh git curl htop gcc mono-mcs libglu1-mesa-dev libglib2.0-dev libgtk2.0-dev && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install project requirements
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install -U pip && \
+    pip install --no-cache-dir -r /tmp/requirements.txt && \
+    rm -f /tmp/requirements.txt
+
+# Add kedro user
+ARG USER_UID=1000
+ARG USER_GID=1000
+RUN groupadd -g ${USER_GID} my_group && \
+    useradd -m -d /home/user -s /bin/zsh -g ${USER_GID} -u ${USER_UID} user
+
+WORKDIR /workspaces
+USER user

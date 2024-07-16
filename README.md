@@ -1,39 +1,80 @@
-# Consultor Financeiro com Análise de Faturas
 
-Este projeto é um consultor financeiro baseado em IA que oferece dicas sobre onde o usuário pode economizar. O objetivo é realizar a análise de faturas mensais de diferentes fontes, incluindo planilhas do Google Sheets, arquivos Excel, PDFs e dados de mercado.
+# Financial Consultant with Invoice Analysis
 
-## Funcionalidades
+This project is an AI-based financial consultant that provides tips on where the user can save money. The goal is to analyze monthly invoices from different sources, including Google Sheets, Excel files, PDFs, and market data.
 
-### Funcionalidades em Andamento
+## Features
 
-- **Análise de Faturas**: Analisa faturas mensais e fornece conselhos financeiros detalhados.
-- **Suporte para Diferentes Fontes**: Suporta a análise de faturas a partir de Google Sheets, arquivos Excel e PDFs.
-- **Informações de Mercado**: Analisa ações e fornece conselhos de posição no mercado.
+### Ongoing Features
 
-### Funcionalidades Implementadas
+- **Invoice Analysis**: Analyzes monthly invoices and provides detailed financial advice.
+- **Support for Different Sources**: Supports invoice analysis from Google Sheets, Excel files, and PDFs.
+- **Market Information**: Analyzes stocks and provides market position advice.
 
-- **Integração com o Banco Central**: Utiliza dados atualizados do Banco Central do Brasil para enriquecer os conselhos financeiros.
+### Implemented Features
 
-## Requisitos
+- **Central Bank Integration**: Uses up-to-date data from the Central Bank of Brazil to enrich financial advice.
 
-- Python 3.6 ou superior
-- Conta no Google Cloud com credenciais para acessar a API do Google Sheets
-- Chave API para Google Generative AI (`gemini-pro`)
+## Requirements
 
-## Instalação
+- Python 3.6 or higher
+- Google Cloud account with credentials to access Google Sheets API
+- API key for Google Generative AI (`gemini-pro`)
 
-### Passo 1: Instalar Docker
+## Installation
 
-Baixar e instalar Docker através do link [Docker Desktop](https://www.docker.com/products/docker-desktop/).
+### Step 1: Install Docker
 
-### Passo 2: Instalar Extensão Docker no VSCode
+Download and install Docker from the [Docker Desktop](https://www.docker.com/products/docker-desktop/) link.
 
-Instalar a extensão Docker no VSCode para facilitar o gerenciamento do container.
+### Step 2: Install Docker Extension in VSCode
 
-### Passo 3: Clonar o Repositório
+Install the Docker extension in VSCode to facilitate container management.
 
-Clonar o repositório do projeto para sua máquina local:
+### Step 3: Clone the Repository
+
+Clone the project repository to your local machine:
 
 ```bash
 git clone https://github.com/Lucas28reis/agente_financeiro.git
 cd agente_financeiro
+```
+
+### Step 4: Run the Container Locally
+
+Press `Ctrl + Shift + P` in VSCode and select the option:
+
+```plaintext
+> Dev Containers: Rebuild Container Without Cache
+```
+
+## Contribution
+
+If you want to contribute to this project, please follow the steps below:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+    ```bash
+    git checkout -b my-new-feature
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -m 'Add new feature'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin my-new-feature
+    ```
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For more information, contact [Lucas Reis](mailto:lucas@example.com).
+
+---
+
+I hope this README is clearer and more organized. If you need anything else, feel free to ask!

@@ -73,7 +73,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For more information, contact [Lucas Reis](mailto:lucas@example.com).
+For more information, contact [Lucas Reis](mailto:crreacicomp@gmail.com).
 
 ---
 

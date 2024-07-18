@@ -1,1 +1,1 @@
-api_key = "SUA-API-KEY-GEMINI" 
+api_key = "YOUR-API-KEY-GEMINI" 

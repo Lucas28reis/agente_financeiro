@@ -4,7 +4,7 @@ from config import api_key
 
 st.set_page_config(page_title="Consultor Financeiro", page_icon="💸")
 
-st.title("Consultor Financeiro - Conselho por Link Sheets")
+st.title("Consultor Financeiro")
 
 agent = Agent(api_key=api_key)
 
